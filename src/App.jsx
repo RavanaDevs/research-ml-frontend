@@ -6,7 +6,7 @@ import {
 } from "recharts";
 
 // ── API CONFIG — change this to your backend URL ─────────────────────────────
-const API_BASE = "http://192.46.215.139:8000"
+const API_BASE = "https://fleetml.ravanadevs.com"
 
 // ── STATIC MODEL DATA (loaded from /model-info on mount) ─────────────────────
 const MODEL_DATA = {

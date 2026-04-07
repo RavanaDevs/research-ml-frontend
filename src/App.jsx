@@ -506,7 +506,7 @@ export default function FleetMLDashboard() {
                     label={{ value: "Reconstruction Error (Anomaly Score)", fill: T.textFaint, fontSize: 10, position: "insideBottom", offset: -5 }} />
                   <YAxis tick={{ fill: T.textFaint, fontSize: 9, fontFamily: "'IBM Plex Mono',monospace" }} />
                   <Tooltip content={<ChartTip />} />
-                  <ReferenceLine x="0.52" stroke={T.amber} strokeWidth={2} strokeDasharray="6 3"
+                  <ReferenceLine x={((Math.round(apiThreshold / 0.04)) * 0.04).toFixed(2)} stroke={T.amber} strokeWidth={2} strokeDasharray="6 3"
                     label={{ value: "Threshold", fill: T.amber, fontSize: 10, fontFamily: "'IBM Plex Mono',monospace" }} />
                   <Bar dataKey="normal" fill={T.accent} fillOpacity={0.6} name="Normal" />
                   <Bar dataKey="fault" fill={T.red} fillOpacity={0.55} name="Fault" />
